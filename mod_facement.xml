@@ -1,0 +1,54 @@
+<?xml version="1.1" encoding="utf-8"?>
+<extension type="module" version="2.5.0" client="site">
+    <name>FaceMent</name>
+    <author>Xtnd.it L.T.D.</author>
+    <creationDate>September 2012</creationDate>
+    <copyright>Copyright (C) 2012 xtnd.it, All rights reserved.</copyright>
+    <license>GNU General Public License</license>
+    <authorEmail>info@xtnd.it</authorEmail>
+    <authorUrl>http://www.xtnd.it/</authorUrl>
+    <version>1.1</version>
+    <description>This module is the easiest way to add the Facebook conversation into your Joomla site. By using it, you will be able to allow Facebook users to comment your content.</description>
+    <files>
+        <filename module="mod_facement">mod_facement.php</filename>
+		<filename>mod_facement.xml</filename>
+        <filename>index.html</filename>
+        <filename>language/bg-BG/bg-BG.mod_facement.ini</filename>
+        <filename>language/cs-CZ/cs-CZ.mod_facement.ini</filename>
+        <filename>language/da-DK/da-DK.mod_facement.ini</filename>
+        <filename>language/el-GR/el-GR.mod_facement.ini</filename>
+        <filename>language/en-GB/en-GB.mod_facement.ini</filename>
+        <filename>language/fr-FR/fr-FR.mod_facement.ini</filename>
+        <filename>language/it-IT/it-IT.mod_facement.ini</filename>
+        <filename>language/zh-CN/zh-CN.mod_facement.ini</filename>
+    </files>
+	<config>
+    	<fields name="params">
+    		<fieldset name="basic">
+                <field name="fb_appid" size="50" type="text" label="MOD_FACEMENT_APP_ID" description="MOD_FACEMENT_APP_ID_DESC" />
+        		<field name="fb_posts" size="50" type="text" label="MOD_FACEMENT_POSTS" description="MOD_FACEMENT_POSTS_DESC" default="2" />
+                <field name="fb_width" size="50" type="text" label="MOD_FACEMENT_WIDTH" description="MOD_FACEMENT_WIDTH_DESC" default="450" />
+                <field name="fb_color" type="list" label="MOD_FACEMENT_COLOR" description="MOD_FACEMENT_COLOR_DESC" default="light" >
+        			<option value="light">MOD_FACEMENT_COLOR_LIGHT</option>
+        			<option value="dark">MOD_FACEMENT_COLOR_DARK</option>
+        		</field>
+                <field name="fb_doc_version" type="list" label="MOD_FACEMENT_DOCTYPE" default="HTML5" description="MOD_FACEMENT_DOCTYPE_DESC">
+                    <option value="HTML5">MOD_FACEMENT_DOCTYPE_HTML5</option>
+                    <option value="Other">MOD_FACEMENT_DOCTYPE_OTHER</option>
+                </field>
+    		</fieldset>
+    	</fields>
+	</config>
+    <administration>
+        <languages folder="language">
+            <language tag="en-GB">en-GB/en-GB.mod_facement.ini</language>
+            <language tag="el-GR">el-GR/el-GR.mod_facement.ini</language>
+            <language tag="it-IT">it-IT/it-IT.mod_facement.ini</language>
+            <language tag="bg-BG">bg-BG/bg-BG.mod_facement.ini</language>
+            <language tag="zh-CN">zh-CN/zh-CN.mod_facement.ini</language>
+            <language tag="cs-CZ">cs-CZ/cs-CZ.mod_facement.ini</language>
+            <language tag="da-DK">da-DK/da-DK.mod_facement.ini</language>
+            <language tag="fr-FR">fr-FR/fr-FR.mod_facement.ini</language>
+        </languages>
+    </administration>
+</extension>
